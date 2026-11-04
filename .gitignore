@@ -1,0 +1,9 @@
+# 浏览器临时缓存目录（与网站无关，且体积大）
+.tmpedge/
+
+# 内网穿透工具（可执行程序，不属于网站）
+bin/
+
+# Vercel 部署副本：内容与根目录重复，且内含令牌等敏感文件
+# （.env.local 存有 VERCEL_OIDC_TOKEN，.vercel_token.tmp 为临时令牌，绝不可入库）
+deploy/
