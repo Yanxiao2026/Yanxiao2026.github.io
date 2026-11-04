@@ -1,9 +1,30 @@
+# ===== 凭证、工具、临时目录：绝不可入库 =====
 # 浏览器临时缓存目录（与网站无关，且体积大）
 .tmpedge/
-
 # 内网穿透工具（可执行程序，不属于网站）
 bin/
-
 # Vercel 部署副本：内容与根目录重复，且内含令牌等敏感文件
-# （.env.local 存有 VERCEL_OIDC_TOKEN，.vercel_token.tmp 为临时令牌，绝不可入库）
+# （.env.local 存有 VERCEL_OIDC_TOKEN，.vercel_token.tmp 为临时令牌）
 deploy/
+
+# ===== 制作过程中的临时文件：不属于网站本体 =====
+# 调试滚动效果的测试页
+test_*.html
+t2.html
+# 截图用的临时页面与截图产物
+shot.html
+shot_t*.png
+sec_*.png
+crop_chips.png
+# 图片抓取脚本与清单（图片已落地，脚本无用）
+assets/dl.js
+assets/dl2.js
+assets/dl.sh
+assets/urls.txt
+assets/commons.json
+assets/commons2.json
+assets/meta.json
+# 未被 index.html 引用的备选素材
+assets/hero.jpg
+assets/jadecong.jpg
+assets/map.png
