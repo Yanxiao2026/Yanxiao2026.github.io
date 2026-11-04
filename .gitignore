@@ -25,6 +25,6 @@ assets/commons.json
 assets/commons2.json
 assets/meta.json
 # 未被 index.html 引用的备选素材
-assets/hero.jpg
 assets/jadecong.jpg
 assets/map.png
+# hero.jpg：恢复为首屏背景后重新纳入版本库（2026-11-04）
